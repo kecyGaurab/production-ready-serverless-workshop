@@ -76,7 +76,7 @@ const we_invoke_get_index = async () => {
 const we_invoke_get_restaurants = async () => {
   switch (mode) {
     case "handler":
-      return await viaHandler({}, "get-retaurants")
+      return await viaHandler({}, "get-restaurants")
     case "http":
       return await viaHttp("restaurants", "GET", { iam_auth: true })
     default:
